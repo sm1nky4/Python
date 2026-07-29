@@ -38,6 +38,8 @@ TASKS = [
             TestCase("15\n7", "-1\n:2"),
             TestCase("100\n5", ":2\n:2\n-1\n:2\n:2\n-1"),
             TestCase("20\n1", ":2\n:2\n-1\n:2\n:2"),
+            TestCase("5\n4", "-1"),
+            TestCase("16\n1", ":2\n:2\n:2\n:2"),
         ],
     ),
     TaskConfig(
@@ -100,6 +102,8 @@ TASKS = [
             TestCase("5\n0", 5.0),
             TestCase("10\n20\n30\n40\n0", 25.0),
             TestCase("1\n1\n1\n0", 1.0),
+            TestCase("-3\n5\n0", 1.0),
+            TestCase("-5\n0", -5.0),
         ],
     ),
     TaskConfig(
@@ -187,6 +191,7 @@ TASKS = [
             TestCase("5\n0", "1"),
             TestCase("3\n3\n3\n3\n0", "4"),
             TestCase("1\n1\n2\n2\n2\n1\n0", "3"),
+            TestCase("1\n2\n2\n1\n2\n2\n2\n1\n2\n2\n2\n2\n0", "4"),
         ],
     ),
     TaskConfig(
@@ -205,6 +210,7 @@ TASKS = [
             TestCase("3\n2\n1\n0", "3"),
             TestCase("1\n3\n2\n4\n3\n5\n0", "2"),
             TestCase("1\n2\n3\n4\n5\n0", "5"),
+            TestCase("1\n2\n2\n3\n4\n0", "3"),
         ],
     ),
 ]
