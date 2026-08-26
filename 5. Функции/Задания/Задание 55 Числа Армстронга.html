@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Задание: Числа-Палиндромы</title>
+    <title>Задание: Числа Армстронга</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -20,18 +20,17 @@
 </head>
 <body class="bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen">
     <div class="container mx-auto px-4 py-5 max-w-4xl">
-        <!-- Header -->
         <div class="bg-white rounded-2xl shadow-xl mb-4 overflow-hidden">
             <div class="bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-6">
                 <div class="flex items-center justify-between">
                     <div>
-                        <h1 class="text-3xl font-bold text-white mb-2">Числа-Палиндромы</h1>
+                        <h1 class="text-3xl font-bold text-white mb-2">Числа Армстронга</h1>
                         <div class="flex items-center space-x-4 text-blue-100">
                             <span class="flex items-center">
                                 <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                 </svg>
-                                Задание 53
+                                Задание 55
                             </span>
                             <span class="flex items-center">
                                 <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -45,14 +44,13 @@
                     <div class="text-right">
                         <div class="bg-white/20 rounded-lg px-4 py-2">
                             <div class="text-sm text-blue-100">Сложность</div>
-                            <div class="text-xl font-bold text-white">Легкая</div>
+                            <div class="text-xl font-bold text-white">Средняя</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Task Description -->
         <div class="bg-white rounded-2xl shadow-lg mb-4 p-6">
             <div class="flex items-center mb-4">
                 <div class="bg-blue-100 rounded-full p-3 mr-4">
@@ -63,12 +61,12 @@
                 <h2 class="text-2xl font-bold text-gray-800">Описание задачи</h2>
             </div>
             <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-                <p>Напишите программу, которая выводит все <strong>числа-палиндромы</strong> в диапазоне от <strong>a</strong> до <strong>b</strong>.</p>
-                <p class="mt-2"><strong>Палиндромом</strong> называется число, которое читается одинаково слева направо и справа налево. Например: 121, 12321.</p>
+                <p>Напишите программу, которая выводит все <strong>числа Армстронга</strong> в диапазоне от <strong>a</strong> до <strong>b</strong>.</p>
+                <p class="mt-2"><strong>Число Армстронга</strong> (нарциссическое число) — натуральное число, равное сумме своих цифр, каждая из которых возведена в степень, равную количеству цифр в числе.</p>
+                <p class="mt-2">Например, <strong>153</strong> — трёхзначное число: 1³ + 5³ + 3³ = 1 + 125 + 27 = 153.</p>
             </div>
         </div>
 
-        <!-- Input/Output Section -->
         <div class="grid md:grid-cols-2 gap-4 mb-4">
             <div class="bg-white rounded-xl shadow-lg p-6">
                 <div class="flex items-center mb-4">
@@ -93,12 +91,11 @@
                     <h3 class="text-lg font-semibold text-gray-800">Выходные данные</h3>
                 </div>
                 <div class="bg-gray-50 rounded-lg p-4">
-                    <pre class="text-base text-gray-700 whitespace-pre-wrap">Все числа-палиндромы от a до b через пробел. Если палиндромов в диапазоне нет — вывести: Нет палиндромов</pre>
+                    <pre class="text-base text-gray-700 whitespace-pre-wrap">Все числа Армстронга от a до b через пробел. Если таких чисел нет — вывести: Нет чисел Армстронга</pre>
                 </div>
             </div>
         </div>
 
-        <!-- Examples Section -->
         <div class="bg-white rounded-2xl shadow-lg mb-4 p-6">
             <div class="flex items-center mb-4">
                 <div class="bg-yellow-100 rounded-full p-3 mr-4">
@@ -117,11 +114,11 @@
                         <div class="p-4">
                             <div class="text-base font-medium text-gray-600 mb-2">Ввод:</div>
                             <pre class="bg-code-bg text-code-text p-3 rounded-lg text-base overflow-x-auto"><code>1
-20</code></pre>
+200</code></pre>
                         </div>
                         <div class="p-4">
                             <div class="text-base font-medium text-gray-600 mb-2">Вывод:</div>
-                            <pre class="bg-code-bg text-code-text p-3 rounded-lg text-base overflow-x-auto"><code>1 2 3 4 5 6 7 8 9 11</code></pre>
+                            <pre class="bg-code-bg text-code-text p-3 rounded-lg text-base overflow-x-auto"><code>1 2 3 4 5 6 7 8 9 153</code></pre>
                         </div>
                     </div>
                 </div>
@@ -133,11 +130,11 @@
                         <div class="p-4">
                             <div class="text-base font-medium text-gray-600 mb-2">Ввод:</div>
                             <pre class="bg-code-bg text-code-text p-3 rounded-lg text-base overflow-x-auto"><code>100
-130</code></pre>
+999</code></pre>
                         </div>
                         <div class="p-4">
                             <div class="text-base font-medium text-gray-600 mb-2">Вывод:</div>
-                            <pre class="bg-code-bg text-code-text p-3 rounded-lg text-base overflow-x-auto"><code>101 111 121</code></pre>
+                            <pre class="bg-code-bg text-code-text p-3 rounded-lg text-base overflow-x-auto"><code>153 370 371 407</code></pre>
                         </div>
                     </div>
                 </div>
@@ -148,12 +145,12 @@
                     <div class="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200">
                         <div class="p-4">
                             <div class="text-base font-medium text-gray-600 mb-2">Ввод:</div>
-                            <pre class="bg-code-bg text-code-text p-3 rounded-lg text-base overflow-x-auto"><code>12
-20</code></pre>
+                            <pre class="bg-code-bg text-code-text p-3 rounded-lg text-base overflow-x-auto"><code>200
+300</code></pre>
                         </div>
                         <div class="p-4">
                             <div class="text-base font-medium text-gray-600 mb-2">Вывод:</div>
-                            <pre class="bg-code-bg text-code-text p-3 rounded-lg text-base overflow-x-auto"><code>Нет палиндромов</code></pre>
+                            <pre class="bg-code-bg text-code-text p-3 rounded-lg text-base overflow-x-auto"><code>Нет чисел Армстронга</code></pre>
                         </div>
                     </div>
                 </div>
